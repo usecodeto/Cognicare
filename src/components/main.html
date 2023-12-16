@@ -1,0 +1,246 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareAI - Revolutionizing Healthcare</title>
+    <!-- Add Bootstrap CSS and Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Add ScrollMagic and AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/uncompressed/ScrollMagic.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            color: #fff; /* White font color */
+            background-image: url('https://hips.hearstapps.com/hmg-prod/images/network-connections-abstract-illustration-royalty-free-illustration-1571065792.jpg'); /* Replace 'your-background-image-url.jpg' with your image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    
+        
+        header {
+        background-color: rgba(76, 175, 80, 0); /* Transparent background */
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+        h1 {
+            font-size: 2.5em;
+        }
+    
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    
+        section {
+            padding: 60px 0;
+        }
+    
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        #popup {
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    
+        #popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        footer {
+        background-color: rgba(51, 51, 51, 0); /* Transparent background */
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+        /* Rest of the existing styling */
+    
+        /* Custom Styling */
+        .feature-card {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s ease-in-out;
+            background-color: #222;
+        }
+    
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+    
+        .module-card {
+        background: linear-gradient(135deg, #222, #444); /* Gradient background */
+        padding: 20px;
+        border-radius: 20px; /* Adjusted border radius */
+        text-align: center;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow */
+        overflow: hidden; /* Hide overflowing content */
+        position: relative; /* Position relative for pseudo elements */
+    }
+
+    .module-card::before,
+    .module-card::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.05); /* Gradient overlay */
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+    }
+
+    .module-card::before {
+        left: 0;
+        top: 0;
+        transform: skewX(-30deg) translateX(-150%);
+    }
+
+    .module-card::after {
+        right: 0;
+        top: 0;
+        transform: skewX(30deg) translateX(150%);
+    }
+
+    .module-card:hover::before,
+    .module-card:hover::after {
+        transform: skewX(-30deg) translateX(150%);
+    }
+
+    .module-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced box-shadow on hover */
+    }
+    
+
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><B>CARE AI</B></h1>
+            <p>Empowering Care through AI: Innovating Compassionate Solutions</p>
+        </div>
+    </header>
+
+    
+
+    
+
+    
+
+    
+    
+    
+    
+    <!-- Repeat the following section structure for each module -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Include sections for other modules (4 to 7) using similar structures -->
+    
+
+    <div id="popup">
+        <div id="popup-content" class="container">
+            <h2 style="color:black;">More About CareAI</h2>
+            <p style="color:black;">Explore the features and benefits of CareAI's intelligent medical assistant. Join us in shaping the future of healthcare!</p>
+            <button class="btn btn-secondary" onclick="hidePopup()">Close</button>
+        </div>
+    </div>
+
+<img src="https://media.licdn.com/dms/image/C5612AQEOrxdeuwXbzg/article-cover_image-shrink_600_2000/0/1627391760350?e=2147483647&v=beta&t=570RfsT32JAf69EaOpKLoBBtoJ9lEkc4q4BIv26F5Fo
+                        " alt="DISEASE DIAGNOSIS">
+   
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Add ScrollMagic and AOS JS -->
+    <script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize ScrollMagic
+        var controller = new ScrollMagic.Controller();
+
+        // Add ScrollMagic scene for features section
+        new ScrollMagic.Scene({
+            triggerElement: '#features',
+            triggerHook: 0.7,
+            reverse: false
+        })
+        .setClassToggle('#features .feature-card', 'aos-animate')
+        .addTo(controller);
+
+        // Add ScrollMagic scenes for modules
+        var moduleScenes = document.querySelectorAll('.module');
+        moduleScenes.forEach(function (scene, index) {
+            new ScrollMagic.Scene({
+                triggerElement: scene,
+                triggerHook: 0.7,
+                reverse: false
+            })
+            .setClassToggle(scene, 'aos-animate')
+            .addTo(controller);
+        });
+    </script>
+</body>
+</html>
+
